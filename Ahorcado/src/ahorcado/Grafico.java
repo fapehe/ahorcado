@@ -60,9 +60,7 @@ public class Grafico extends javax.swing.JFrame {
 
         letra5.setText("_______");
 
-        jLabel1.setText("INGRESE UNA LETRA");
-
-        Letras.setText("Ingrese una letra");
+        jLabel1.setText("INGRESE UNA LETRA EN EL ESPACION EN BLANCO");
 
         BotonVer.setText("VERIFICAR");
         BotonVer.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -71,7 +69,7 @@ public class Grafico extends javax.swing.JFrame {
             }
         });
 
-        Contador.setText("turnos");
+        Contador.setText("CANTIDAD DE TURNOS RESTANTES");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -164,9 +162,14 @@ public class Grafico extends javax.swing.JFrame {
             this.palabraResuelta[4]=this.letra5.getText().charAt(0);
  
              
-             if(this.palabraResuelta[0]==this.tabGraf.palabra[0] && this.palabraResuelta[1]==this.tabGraf.palabra[1] )
+             if(this.palabraResuelta[0]==this.tabGraf.palabra[0] && 
+                this.palabraResuelta[1]==this.tabGraf.palabra[1] && 
+                this.palabraResuelta[2]==this.tabGraf.palabra[2] && 
+                this.palabraResuelta[3]==this.tabGraf.palabra[3] && 
+                this.palabraResuelta[4]==this.tabGraf.palabra[4])
              {
                 this.Contador.setText("GANO");
+                this.BotonVer.setEnabled(false);
              }
              
         }

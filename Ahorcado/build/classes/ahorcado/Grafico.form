@@ -107,13 +107,10 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="INGRESE UNA LETRA"/>
+        <Property name="text" type="java.lang.String" value="INGRESE UNA LETRA EN EL ESPACION EN BLANCO"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="Letras">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ingrese una letra"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="BotonVer">
       <Properties>
@@ -125,7 +122,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Contador">
       <Properties>
-        <Property name="text" type="java.lang.String" value="turnos"/>
+        <Property name="text" type="java.lang.String" value="CANTIDAD DE TURNOS RESTANTES"/>
       </Properties>
     </Component>
   </SubComponents>
