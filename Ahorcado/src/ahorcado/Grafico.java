@@ -164,7 +164,7 @@ public class Grafico extends javax.swing.JFrame {
             this.palabraResuelta[4]=this.letra5.getText().charAt(0);
  
              
-             if(this.palabraResuelta[0]==this.tabGraf.palabra[0])
+             if(this.palabraResuelta[0]==this.tabGraf.palabra[0] && this.palabraResuelta[1]==this.tabGraf.palabra[1] )
              {
                 this.Contador.setText("GANO");
              }
