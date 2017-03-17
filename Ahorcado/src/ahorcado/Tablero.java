@@ -15,11 +15,11 @@ public class Tablero {
 
     public Tablero() {
         int j=97;
-        for (int i=0;i<5;i++)
-        {
-            palabra[i]=(char) j;
-            j++;
-        }
+          palabra[0]='m';
+          palabra[1]='o';
+          palabra[2]='s';
+          palabra[3]='c';
+          palabra[4]='a';
     }
     void imprimir(){
         for (int i=0;i<5;i++)

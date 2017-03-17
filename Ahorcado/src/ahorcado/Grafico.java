@@ -18,10 +18,15 @@ public class Grafico extends javax.swing.JFrame {
     char letra;
     Tablero tabGraf;
     Jugador jugGrag;
-    int vida,vidaR=0;
+    int vida;
+    char palabraResuelta[] = new char[5];
     
     public Grafico() {
         initComponents();
+        for (int i=0;i<5;i++)
+            {
+                palabraResuelta[i]=' ';
+            }
     }
 
     /**
@@ -138,14 +143,30 @@ public class Grafico extends javax.swing.JFrame {
                       case 2: this.letra3.setText(String.valueOf(letra));break;
                       case 3: this.letra4.setText(String.valueOf(letra));break;
                       case 4: this.letra5.setText(String.valueOf(letra));break;
-                  }  
+                  }
+                  break;
                 }
-                
+                else
+                {
+                    if (i==4)
+                    {
+                        this.Contador.setText("Le quedan "+String.valueOf(this.jugGrag.calculo(1))+" oportunidades");
+                    } 
+                       
+                }
+
             }
-             this.Contador.setText("Le quedan "+String.valueOf(this.jugGrag.calculo(1))+" turnos");
-             if(this.letra1.equals(this.tabGraf.palabra[0]))
+          
+            this.palabraResuelta[0]=this.letra1.getText().charAt(0);
+            this.palabraResuelta[1]=this.letra2.getText().charAt(0);
+            this.palabraResuelta[2]=this.letra3.getText().charAt(0);
+            this.palabraResuelta[3]=this.letra4.getText().charAt(0);
+            this.palabraResuelta[4]=this.letra5.getText().charAt(0);
+ 
+             
+             if(this.palabraResuelta[0]==this.tabGraf.palabra[0])
              {
-             this.Contador.setText("GANO");
+                this.Contador.setText("GANO");
              }
              
         }
